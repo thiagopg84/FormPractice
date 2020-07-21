@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Form practice</title>
+</head>
+<body>
+    <form action="#">
+        <h2>Lista de recomendações de restaurantes</h2>
+        <fieldset>
+            <legend>Sobre o Restaurante</legend>
+            <div class="form__container">
+                <div class="form__item">
+                    <label for="nome">Nome do estabelecimento:</label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+                <div class="form__item">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" name="endereco" id="endereco" required>  
+                </div>
+                <div class="form__item">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" name="telefone" id="telefone" required>
+                </div>
+                <div class="form__item">
+                    <span>Categoria:</span>
+                    <div class="form__subitem">
+                        <input type="checkbox" name="lanches" id="lanches" value="lanches">
+                        <label for="lanches">Lanches</label>
+                        <input type="checkbox" name="pizzas" id="pizzas" value="pizzas">
+                        <label for="pizzas">Pizzas</label>
+                        <input type="checkbox" name="hamburgeres" id="hamburgeres" value="hamburgeres">
+                        <label for="hamburgeres">Hambúrgueres</label>
+                        <input type="checkbox" name="japonesa" id="japonesa" value="japonesa">
+                        <label for="japonesa">Japonesa</label>
+                        <input type="checkbox" name="chinesa" id="chinesa" value="chinesa">
+                        <label for="chinesa">Chinesa</label>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <label for="valores">Faixa de Valores:</label>
+                    <input type="number" name="valores" id="" required>
+                </div>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Conte sua experiência</legend>
+            <div class="form__container">
+                <div class="form__item">
+                    <label for="pedido">O que pediu?</label>
+                    <input type="text" name="pedido" id="pedido" required>
+                </div>
+                <div class="form__item">
+                    <label for="valor-compra">Quanto foi?</label>
+                    <input type="number" name="valor-compra" id="valor-compra" required>
+                </div>
+                <div class="form__item">
+                    <label for="velocidade-entrega">Entregou rápido?</label>
+                    <div class="form__subitem">
+                        <input type="radio" name="velocidade-entrega" id="entrega-rapida" value="Entrega rápida" required> <span>Sim</span>
+                        <input type="radio" name="velocidade-entrega" id="entrega-demorada" value="Entrega demorada" required> <span>Não</span>
+                    </div>
+                </div>
+                <div class="form__item">
+                    <label for="obs">Observações:</label>
+                    <textarea name="obs" id="obs" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+        </fieldset>
+        <div class="form__btns">
+            <input type="submit" name="submit" id="submit" value="Enviar">
+            <input type="reset" name="reset" id="reset" value="Limpar">
+        </div>
+            
+    </form>
+</body>
+</html>

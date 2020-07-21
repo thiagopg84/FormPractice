@@ -1,0 +1,99 @@
+/* Google fonts --------------------------------------------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+/* CSS basic settings --------------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #6d0404;
+    --color-secondary: #420808;
+    --font: 'Merriweather', serif;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--font);
+}
+
+img {
+    max-width: 100%;
+}
+
+h2 {
+    font-size: 3rem;
+    font-style: italic;
+    color: indigo;
+    font-weight: 400;
+    margin-bottom: 1.6rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+fieldset {
+    padding: 2rem;
+}
+
+legend {
+    font-size: 2rem;
+    margin-left: 1.6rem;
+    color: indigo;
+    font-style: italic;
+    font-weight: 900;
+    padding: 1.2rem;
+}
+
+.form__container {
+    font-size: 1.6rem;
+}
+
+.form__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__subitem {
+    
+}
+
+.form__item:not(:last-child) {
+    margin-bottom: 1.6rem;
+}
+
+.form__item label {
+
+}
+
+.form__item span {
+
+}
+
+.form__btns {
+    padding-top: 1.6rem;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="tel"] {
+    width: 100%;
+}
+
+input[type="textarea"] {
+
+}
+
+input[type="submit"],
+input[type="reset"] {
+    padding: 1.2rem; 
+}
