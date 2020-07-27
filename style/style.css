@@ -43,6 +43,7 @@ form {
 
 fieldset {
     padding: 2rem;
+    border-radius: 5px;
 }
 
 legend {
@@ -81,6 +82,8 @@ legend {
 
 .form__btns {
     padding-top: 1.6rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 input[type="text"],
